@@ -8,6 +8,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-blueviolet.svg)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-19.2-61DAFB.svg)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-7.3-646CFF.svg)](https://vitejs.dev/)
+[![Netlify Status](https://img.shields.io/badge/Netlify-Live-success.svg)](https://nebulatalk.netlify.app)
 
 ---
 
@@ -72,6 +73,16 @@ All messages, calls, and files are **end-to-end encrypted** using AES-GCM. Your 
 ## 📸 Screenshots
 
 > *Screenshots coming soon — the app is fully functional and ready to use!*
+
+---
+
+## 🌐 Live Demo
+
+You can try the live version of Nebula here:
+
+👉 **[nebulatalk.netlify.app](https://nebulatalk.netlify.app)**
+
+> **Note**: Since Nebula is a peer-to-peer messenger, you'll need to share your Peer ID with a friend to test the messaging features. Open the app in two different browsers or devices to see it in action!
 
 ---
 
