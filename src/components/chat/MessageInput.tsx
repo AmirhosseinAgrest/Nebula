@@ -6,8 +6,7 @@ import { fileToBase64 } from "@/lib/utils/file";
 import { MAX_FILE_SIZE_BYTES, MAX_VOICE_DURATION_SEC } from "@/lib/utils/constants";
 import { formatDuration } from "@/lib/utils/date";
 import { cn } from "@/utils/cn";
-
-const QUICK_EMOJIS = ["😀", "😂", "😍", "😎", "🙌", "🔥", "🎉", "👏", "🙏", "😢", "😮", "❤️", "👍", "🤔", "😴", "🥳"];
+import { EmojiPicker } from "./EmojiPicker";
 
 interface MessageInputProps {
   roomId: string;
@@ -175,20 +174,12 @@ export function MessageInput({ roomId }: MessageInputProps) {
               />
             </div>
             {showEmoji && (
-              <div className="absolute bottom-14 left-0 z-20 grid w-64 grid-cols-8 gap-1 rounded-2xl bg-white dark:bg-[#2C2C2E] p-3 shadow-2xl ring-1 ring-black/5">
-                {QUICK_EMOJIS.map((emoji) => (
-                  <button
-                    key={emoji}
-                    className="text-xl transition-transform hover:scale-125"
-                    onClick={() => {
-                      setText((t) => t + emoji);
-                      setShowEmoji(false);
-                    }}
-                  >
-                    {emoji}
-                  </button>
-                ))}
-              </div>
+              <EmojiPicker
+                onEmojiClick={(emoji) => {
+                  setText((t) => t + emoji);
+                }}
+                onClose={() => setShowEmoji(false)}
+              />
             )}
           </div>
 

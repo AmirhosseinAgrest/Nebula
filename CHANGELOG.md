@@ -7,6 +7,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.1.0] - 2026-08-18
+
+###  Added
+- **Emoji Picker** — Integrated `emoji-picker-react` library with a dedicated component
+  - Lazy-loaded for better initial bundle performance
+  - Auto-detects dark/light theme and adjusts picker appearance
+  - Closes automatically when clicking outside the picker
+  - Emoji style set to system-native (respects user's OS font)
+- **Emoji Support in Message Input** — Users can now insert emojis directly into the message composer
+  - Emoji picker opens with a click on the emoji  icon next to the text input
+  - Picker stays open after selection, allowing multiple emojis to be added consecutively
+
+###  Changed
+- **Message Input** — Improved user experience with emoji integration
+  - Moved emoji button closer to the text area for easier access
+  - Adjusted layout to accommodate the new emoji picker
+
+---
+
 ## [1.0.0] - 2026-07-07
 
 ### 🎉 Initial Release
@@ -185,6 +204,7 @@ We would like to thank the following contributors for their work on this release
 
 | Version | Release Date | Changes |
 |---------|-------------|---------|
+| **1.1.0** | 2026-08-18 | Added emoji picker and improved message input |
 | **1.0.0** | 2026-07-07 | Initial release |
 
 ---
