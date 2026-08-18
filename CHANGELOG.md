@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.1.1] - 2026-08-18
+
+## Fixed
+- Removed deprecated `baseUrl` from `tsconfig.json` and updated paths to use explicit relative paths (`./src/*`). This prepares the project for TypeScript 7.0 and eliminates the deprecation warning.
+
+---
+
 ## [1.1.0] - 2026-08-18
 
 ###  Added
@@ -204,6 +211,7 @@ We would like to thank the following contributors for their work on this release
 
 | Version | Release Date | Changes |
 |---------|-------------|---------|
+| **1.1.1** | 2026-08-18 | remove deprecated baseUrl from tsconfig |
 | **1.1.0** | 2026-08-18 | Added emoji picker and improved message input |
 | **1.0.0** | 2026-07-07 | Initial release |
 

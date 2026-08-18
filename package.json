@@ -1,7 +1,7 @@
 {
   "name": "Nebula",
   "private": true,
-  "version": "1.1.0",
+  "version": "1.1.1",
   "type": "module",
   "description": "A completely serverless, peer-to-peer, end-to-end encrypted messenger. No servers, no databases — just you and your contacts.",
   "repository": {
